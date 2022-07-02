@@ -1,5 +1,5 @@
 ﻿// 1. Нахождение максимума из 9 чисел;
-
+// -------------------------------------------------
 // int a1 = 15;
 // int b1 = 21;
 // int c1 = 39;
@@ -11,7 +11,7 @@
 // int c3 = 313;
 
 // int max = a1;
-// if (b1 > max) max = b1;
+// if (b1 > max) max = b1; // Сравню все переменные и max.
 // if (c1 > max) max = c1;
 
 // if (a2 > max) max = a2;
@@ -23,13 +23,13 @@
 // if (c3 > max) max = c3;
 
 // Console.WriteLine(max);
-
+// ---------------------------------------------------------------
 // 2. Теперь воспользуюсь функциями
 
-int Max(int arg1, int arg2, int arg3)
+int Max(int arg1, int arg2, int arg3) // Опишу функцию (метод), берет три числа и ищет max.
 {
-    int result = arg1;
-    if (arg2 > result) result = arg2;
+    int result = arg1; // Тут будет хратиться значение max.
+    if (arg2 > result) result = arg2; // Сравнение, поиск max.
     if (arg3 > result) result = arg3;
     return result;
 }
@@ -48,7 +48,7 @@ int c3 = 313;
 // int max2 = Max(a2, b2, c2);
 // int max3 = Max(a3, b3, c3);
 // int max = Max(max1,max2,max3);
-// Это же можно записать с одну строку.
+// Это же можно записать в одну строку.
 
 int max = Max(Max(a1,b1,c1),Max(a2, b2, c2),Max(a3, b3, c3));
 
