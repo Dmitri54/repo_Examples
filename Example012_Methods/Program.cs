@@ -172,5 +172,5 @@ void SelectionSort(int[] array) // Опишу новый метод
 
 PrintArray(arr); // Пишу в конце, выведет массив.
 
-SelectionSort(arr); // Выведет отсортированный массив.
-PrintArray(arr);
+SelectionSort(arr); // Отсортирует массив.
+PrintArray(arr); // Выведет отсортированный массив.
